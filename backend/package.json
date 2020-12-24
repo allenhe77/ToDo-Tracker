@@ -1,0 +1,31 @@
+{
+  "name": "todo_tracker",
+  "version": "1.0.0",
+  "description": "RESTful API for tracking, managing, organizing, etc to-dos (tasks, reminders, etc)",
+  "main": "./src/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon ./src/index.js",
+    "db-init": "node -r dotenv/config ./src/utils/user.seed.js dotenv_config_path=./src/config/.env"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RisBye1/ToDo-Tracker.git"
+  },
+  "author": "Risbah#2317",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RisBye1/ToDo-Tracker/issues"
+  },
+  "homepage": "https://github.com/RisBye1/ToDo-Tracker#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.8",
+    "validator": "^13.5.2"
+  }
+}
